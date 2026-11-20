@@ -1,0 +1,18 @@
+# the phone's own firmware: it is the vendor's, it comes off your own phone, and it is never committed
+/fw-*/
+/fw-audio/
+/fw-camera/
+/fw-gpu/
+/fw-haptic/
+/fw-modem/
+/fw-wifi/
+
+# build output
+/build/
+/logs/
+*.log
+
+# the common repository's build output, when the port is built inside a checkout
+/xnu-src/
+/xnuloader/loader.obj
+/hakios-kernel
