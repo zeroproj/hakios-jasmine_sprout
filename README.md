@@ -28,6 +28,7 @@ soc/                   the SDM660 family's facts, and the configuration they bri
 prebuilt/device-tree.dtb   the phone's own device tree, built from its vendor kernel
 docs/port-notes.md     the hardware, with its sources; what differs from the reference phone
 docs/plan.md           the steps, and how each is checked
+docs/qemu-boot.md      the receipt: a boot of this configuration, in QEMU
 tools/soc-args-caf.py  reads this phone's device tree (a Qualcomm CAF one) into the SoC's addresses
 pull-firmware.sh       the phone's firmware, off the phone over adb (never committed: it is the vendor's)
 pull-soc.sh            the phone's live device tree, into soc.args
