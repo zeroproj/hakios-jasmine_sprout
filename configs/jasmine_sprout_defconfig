@@ -1,0 +1,11 @@
+# HakiOS defconfig for the Xiaomi Mi A2 (jasmine_sprout, SDM660): the common kernel's configuration, the SDM660 family's facts
+# and this phone's own, put together the way Android puts a device's kernel configuration together.
+#
+# What is left out of the kernel is what is not this phone's: the reference phone's drivers (the Goodix touch screen on SPI,
+# the UFS storage, the WCN6750's Wi-Fi) are the reference phone's hardware and must not touch this one. The drivers of this
+# phone that are written yet are named in the note at the top of configs/jasmine_sprout.config.
+#
+# Needs the phone's own firmware pulled from your phone (pull-firmware.sh): `tools/hakios-config.py needs`.
+#include common_defconfig
+#include sdm660.config
+#include jasmine_sprout.config
